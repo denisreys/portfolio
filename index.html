@@ -1,9 +1,163 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Денис Рейс портфолио</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/scripts.js"></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div class="wrapper">
+        <div class="container">
+            <section class="header" >
+                <ul class="navigation">
+                    <li class="navigation__item navigation__item--active">
+                        <a href="#summary">Основное</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#experience">Опыт</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#projects">Pet-проекты</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="summary" class="content">
+                <div  class="content__item content__item--summary">
+                    <div class="summary mb-20">
+                        <div class="summary__info">
+                            <div class="summary__name">
+                                <h1 class="h1">Денис Рейс</h1>
+                                <div class="summary__age">25 лет</div>
+                            </div>
+                            <div class="summary__post">Web-разработчик</div>
+                            <div class="summary__status">Ищу работу</div>
+                            
+                        </div>
+                        <div class="summary__image">
+                            <img src="images/avatar.jpeg">
+                        </div>
+                    </div>
+                    <div class="summary__about">
+                        Опыт программирования 6 лет из них год коммерческой разработки. Обучался самостоятельно по видео курсам и документации. Не боюсь сложных задач, верю, что всему можно научиться. Стараюсь постоянно восполнять недостающие знания и профессионально расти. 
+                    </div>
+                    <h2 class="title h2">Навыки</h2>
+                    <div class="summary__skills">
+                        <p class="mb-10"><b>Front-end:</b> JavaScript, HTML, CSS, БЭМ, Vue.js, JQuery, Sass, Less, Axios, Ajax, Bootstrap, Адаптивная верстка</p>
+                        <p class="mb-10"><b>Backend:</b> PHP, MySQL, Laravel, Drupal</p>
+                        <p class="mb-10"><b>Другое:</b> MVC, ООП, Figma, Слепая печать</p>
+                        <p class="mb-10"><b>Языки:</b> English(A2), Русский</p>
+                    </div>
+                </div>
+                <div id="experience" class="content__item content__item--experience">
+                    <h2 class="title h2">Опыт</h2>
+                    <div class="experience">
+                        <div class="experience__item">
+                            <div class="experience__header">
+                                <div class="experience__header__name">ООО МЕГАКИП</div>
+                                <div class="experience__header__duration">Ноябрь 2019 - Декабрь 2020 г.</div>
+                            </div>
+                            <div class="experience__post">Web-разработчик</div>
+                            <div class="experience__text p">
+                                <p class="mb-10">Компания является небольшим дилером заводов производящих измерительные приборы и различное промышленное оборудование.</p>
+                                <p class="mb-10">Сначала я работал удаленно, создавая интернет-магазин. Директор немного понимал Drupal, поэтому и сайт должен был быть тоже на нём. Сайт должен был состоять из:</p>
+                                <ul class="list mb-20">
+                                    <li>Главной страницы со слайдером и списком различных предложений</li>
+                                    <li>Каталога</li>
+                                    <li>Страницы товара с формой обратной связи, где есть все, кроме номера покупателя</li>
+                                    <li>Раздела статей</li>
+                                    <li>О нас с виджетов интерактивной карты, контактов, сертификатов и тд</li>
+                                </ul>
+                                <p>После того как сайт был закончен, я перешёл работать в офис где занимался наполнением, сео продвижением и улучшением функционала. Ушел, когда закончилась работа для разработчика и осталась только для копирайтера, системного администратора.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects" class="content__item content__item--projects">
+                    <h2 class="title h2">Pet-проекты</h2>
+                    <div class="projects">
+                        <div class="projects__item">
+                            <div class="projects__header">
+                                <div class="projects__header__name">Jopapp</div>
+                                <div class="projects__header__duration">Декабрь 2022 г. - ...</div>
+                            </div>
+                            <div class="projects__text">
+                                Сервис для планирования времени с отслеживание продуктивности. Проект проект имел цель закрепить на практике теоретические знания Vue.js и Laravel.
+                            </div>
+                            <div class="projects__links">
+                                <div class="projects__links__item">
+                                    <a href="https://github.com/denisreys/jopapp" target="_blank" class="link">GitHub</a>
+                                </div>
+                                <div class="projects__links__item">
+                                    <a href="http://f0802988.xsph.ru/" target="_blank" class="link">Ссылка</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__item">
+                            <div class="projects__header">
+                                <div class="projects__header__name">Polarize</div>
+                                <div class="projects__header__duration">2016 - 2018 г.</div>
+                            </div>
+                            <div class="projects__text">
+                                Платформа для личных блогов разработана используя MVC и JQuery. 
+                                <br/>
+                                В рамках этого проекта я решил разнообразные задачи, включая авторизацию через социальные сети, 
+                                подписки, репосты, оценки постов, комментарии, добавление тегов и опросов к постам, возможность загружать и обрезать изображения. 
+                                <br/>
+                                Также я реализовал ленту рекомендаций, которая учитывает активность пользователя.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contacts" class="content__item content__item--contacts">
+                    <h2 class="title h2">Контакты</h2>
+                    <div class="contacts">
+                        <div class="contacts__item">
+                            <div class="contacts__icon">
+                                <img src="images/phone.png" alt="phone">
+                            </div>
+                            <div class="contacts__value">+79514210914</div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__icon">
+                                <img src="images/mail.png" alt="email">
+                            </div>
+                            <div class="contacts__value">sever_666@list.ru</div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__icon">
+                                <img src="images/telegram.png" alt="telegram">
+                            </div>
+                            <div class="contacts__value">
+                                <a href="http://t.me/denis_reys" class="link" target="_blank">t.me/denis_reys</a>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__icon">
+                                <img src="images/github.png" alt="github">
+                            </div>
+                            <div class="contacts__value">
+                                <a href="http://github.com/denisreys" class="link" target="_blank">github.com/denis_reys</a>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__icon">
+                                <img src="images/leetcode.png" alt="leetcode">
+                            </div>
+                            <div class="contacts__value">
+                                <a href="https://leetcode.com/denisreys" class="link" target="_blank">leetcode.com/denisreys</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="footer"></section>
+        </div>
+    </div>
 </body>
 </html>

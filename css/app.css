@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body, ul {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+.p {
+
+}
+.list {
+    list-style: circle;
+    padding-left: 10px;
+    margin-left: 15px;
+}
+.list li:not(:last-child) {
+    margin-bottom: 8px;
+}
+.h1 {
+    font-size: 28px;
+}
+.h2 {
+    font-size: 24px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.link {
+    color: #4b3e93;
+}
+.title {
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+html, body { 
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #efefef;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    line-height: 150%;
+}
+.wrapper {
+    padding: 20px 30px 50px 30px;
+}
+.container {
+    margin: auto;
+    max-width: 700px;
+    position: relative;
+}
+.header {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #efefef73;
+    backdrop-filter: blur(13px);
+    margin-bottom: 20px;
+}
+.content {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 5px;
+}
+.navigation {
+    display: inline-flex;
+    margin: 0 auto;
+}
+.navigation__item a {
+    display: block;
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: #4b3e93;
+}
+.navigation__item:hover {
+    opacity: 0.9;
+}
+.navigation__item--active a {
+    background-color: #4b3e93;
+    color: #fff;
+}
+.summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.summary__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+.summary__name {
+    width: fit-content;
+    white-space: nowrap;
+}
+.summary__name h1 {
+    display: inline-block;
+}
+.summary__age {
+    display: inline-block;
+    margin: 1px 0 0 10px;
+    vertical-align: top;
+    font-size: 13px;
+}
+.summary__image {
+    flex-basis: 110px;
+    margin-top: -10px;
+}
+.summary__image img {
+    width: 100%;
+    margin-bottom: -4px;
+    border-radius: 50%;
+}
+.summary__status {
+    color: #2CC81F;
+}
+
+.experience__item:not(:last-child), .projects__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.experience__header, .projects__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.experience__header__duration, .projects__header__duration {
+    font-size: 13px;
+}
+.experience__post {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.projects__header__name {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.projects__links {
+    display: flex;
+    margin-top: 10px;
+}
+.projects__links__item:not(:last-child) {
+    margin-right: 10px;
+}
+.contacts {
+    column-count: 2;
+}
+.contacts__item {
+    display: flex;
+    align-items: center;
+}
+.contacts__item:not(:last-child){
+    margin-bottom: 10px;
+}
+.contacts__icon {
+    flex-basis: 24px;
+    margin-right: 10px;
+}
+.contacts__icon img {
+    max-width: 100%;
+    margin-bottom: -4.5px;
+}
+.contacts__value {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

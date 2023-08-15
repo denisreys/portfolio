@@ -1,0 +1,77 @@
+@media only screen and (max-width: 768px){
+    .h1 {
+        font-size: 26px;
+    }
+    .h2 {
+        font-size: 22px;
+    }
+    .content {
+        padding: 30px 20px;
+    }
+    .summary__image {
+        flex-basis: 100px;
+    }
+    .title {
+        padding-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 480px){
+    body {
+        line-height: 140%;
+        letter-spacing: 0.3px;
+    }
+    .h1 {
+        font-size: 24px;
+    }
+    .h2 {
+        font-size: 20px;
+    }
+    .wrapper {
+        padding: 0;
+    }
+    .header {
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+    }
+    .navigation {
+        width: 100%;
+    }
+    .navigation__item {
+        flex: 1;
+    }
+    .navigation__item a {
+        padding: 1.8vh 5px;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+    .navigation__item--active a{
+        border-radius: 0;
+    }
+    .content {
+        padding: 30px 20px;
+        border-radius: 0;
+        margin-bottom: 41.63px;
+    }
+    .title {
+        padding-top: 40px;
+        margin-bottom: 15px;
+    }
+    .contacts {
+        column-count: 1;
+    }
+}
+@media only screen and (max-width: 380px){
+    .experience__header, .projects__header {
+        flex-direction: column;
+    }
+    .experience__header__duration, .projects__header__duration {
+        color: #c4bfb5;
+    }
+    .summary__skills b {
+        display: block;
+    }
+}
