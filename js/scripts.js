@@ -5,7 +5,7 @@ window.onload = function(){
     const content = document.querySelectorAll('.content__item');
 
     window.addEventListener('scroll', () => {
-        let scrollMiddlePosition = window.scrollY + (window.innerHeight / 1.5);
+        let scrollMiddlePosition = window.scrollY + (window.innerHeight / 1.2);
         
         content.forEach((el, i) => { 
             if(el.offsetTop - navigationHeight <= scrollMiddlePosition){
