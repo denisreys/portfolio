@@ -39,12 +39,21 @@ p, h1, h2, h3 {
 .mb-20 {
     margin-bottom: 20px;
 }
+.mb-60 {
+    margin-bottom: 60px;
+}
+[id]::before {
+    content: '';
+    display: block;
+    height:      75px;
+    margin-top: -75px;
+    visibility: hidden;
+}
 .link {
     color: #4b3e93;
 }
 .title {
     text-align: center;
-    padding-top: 60px;
     margin-bottom: 30px;
 }
 html, body { 
@@ -73,8 +82,8 @@ body {
     padding: 12px;
     width: 100%;
     box-sizing: border-box;
-    background-color: #efefef73;
-    backdrop-filter: blur(13px);
+    background-color: #efefefb8;
+    backdrop-filter: blur(6px);
     margin-bottom: 20px;
 }
 .content {
@@ -186,4 +195,3 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
