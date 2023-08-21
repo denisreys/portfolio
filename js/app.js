@@ -10,8 +10,8 @@ window.onload = function(){
         
         content.forEach((el, i) => { 
             el.offsetBottom = el.offsetTop + el.offsetHeight;
-
-            if(scrollYBottom == document.body.scrollHeight){
+            
+            if(scrollYBottom >= document.body.scrollHeight){
                 const lastContentKey = content.length - 1;
                 addActiveClass(lastContentKey);
             }
