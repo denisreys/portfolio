@@ -64,7 +64,7 @@ body {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.5px;
     line-height: 150%;
 }
 .wrapper {
@@ -144,7 +144,19 @@ body {
 .summary__status {
     color: #2CC81F;
 }
-
+.skills__item {
+    display: flex;
+}
+.skills__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.skills__label {
+    font-weight: bold;
+    width: 80px;
+}
+.skills__list {
+    flex: 1;
+}
 .experience__item:not(:last-child), .projects__item:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -164,6 +176,7 @@ body {
 .projects__header__name {
     text-transform: uppercase;
     font-weight: 600;
+    letter-spacing: 0.6px;
 }
 .projects__links {
     display: flex;

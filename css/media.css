@@ -67,6 +67,15 @@
     .contacts {
         column-count: 1;
     }
+    .skills__item {
+        flex-direction: column;
+    }
+    .skills__label{
+        margin-bottom: 5px;
+    }
+    .projects__header__name, .experience__header__name {
+        font-size: 14px;
+    }
 }
 @media only screen and (max-width: 380px){
     .experience__header, .projects__header {
@@ -74,8 +83,5 @@
     }
     .experience__header__duration, .projects__header__duration {
         color: #c4bfb5;
-    }
-    .summary__skills b {
-        display: block;
     }
 }
